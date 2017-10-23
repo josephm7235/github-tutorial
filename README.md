@@ -44,11 +44,23 @@ Creating a SHH key is important as it will allow the user to push their commits 
 1. Once you have added a file to the stage you are now able to commit your file
 2. Do `git commit -m " Present tense description"`
 
-
 ---
 ## Workflow & Commands
-* _git status_ 
-
+* _git status_ is used in order to see if you successfully committed your changes
+   1. After you `git commit -m " "` proceed to do `git status` youll recieve a update if your file has been modified and commited  
+* _git add_ similar to your repo setup you'll repeat set 1-3 whenever you want add a file to the stage
+* _git commit_ repeat steps **1-2** from repo setup
+* _git push_ is the process of pushing all your previous commits into your remote repo 
+1. After you have `git commit -m ""` you'll know what to push this will only work if you have copied your SHH key if not do so
+2. Once you have done that do `git push` and it will push your commits onto your remote repo
 
 ---
 ## Rolling Back Changes
+* **undo edits** in order to undo a edit that you did in a file then  do `git checkout -- filename` 
+* **undo add** in order to unstage a file you must `git reset HEAD filename`
+* **undo commits** in order to undo a commit there are three possible ways of undoing 
+   * `git reset --soft HEAD~1` = this will undo the last commit you did however your file will remain  
+   * `git reset HEAD~1` = Will undo your last commit but will also unstage your file   
+   * `git reset --hard HEAD~1` = Your commits will undo and the file file will unstage while deleting all the changes
+* **undo a push** in order to undo a push you must `git reset -- hard HEAD~1
+
