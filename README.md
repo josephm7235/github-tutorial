@@ -3,22 +3,24 @@
 _by Joseph Medrano_
 
 ---
-## Git vs. GitHub
+## Git vs. GitHub 
 * Git: Is a function which keeps snapshot of code when one add and commits  
 * GitHub: Is dependent of git as it uses git features in order to take snapshots of code however GitHub allows for the snapshot to be stored in a cloud in which one can retrive their code for later usage. It also allows for tracking files for collaboration
+
+[comment]: <> (explained what each of the functions mean and what they do)
 
 ---
 ## Initial Setup
 #### Creating a git hub account:
 It is important to have a git hub account as it will allow you to share your repository with your peers and retrive projects
 1. Go to [Github.com](https://github.com/login) and click create a account
-2. When creating your account include username and email and decide on password (make sure to fill out remaning sections)
+2. When creating your account include username and email and decide on password (make sure to fill out remaning sections) 
 3.  **After make sure to verify your email after creating git account** 
 
 #### Creating a SHH key:  
 Creating a SHH key is important as it will allow the user to push their commits to a remote repository in which if they lose their local repo they can retrive their commits from the remote repo
 1. Go to [Github.com](https://github.com/login) and drag your mouse to the top right corner onto profile icon then click setting
-2. Click the left side bar and go to SHH and GPG
+2. Click the left side bar and go to SHH and GPG  
 3. Make a new SHH key and title it as c9.io
 4. Switch to [c9.io](https://c9.io/)
 5. `cd ~/workspace` followed by `mkdir new_repo` or `cd existing repo`
@@ -55,7 +57,7 @@ Creating a SHH key is important as it will allow the user to push their commits 
 2. Once you have done that do `git push` and it will push your commits onto your remote repo
 
 ---
-## Rolling Back Changes
+## Rolling Back Changes 
 * **undo edits** in order to undo a edit that you did in a file then  do `git checkout -- filename` 
 * **undo add** in order to unstage a file you must `git reset HEAD filename`
 * **undo commits** in order to undo a commit there are three possible ways of undoing 
